@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артисты на ваше мероприятие</title>
+    <script>
+      function scrollDown() {
+     window.scrollTo({
+       top: window.scrollY + 650,
+       behavior: 'smooth'
+     });
+   }
+    </script>
+    <script>
+    function leaveRequest() {
+      var phoneNumber = prompt("Оставьте заявку, Пожалуйста, введите ваш номер телефона(без 8):");
+      if(phoneNumber === null){
+        alert("Заявка отменена!");
+        return;
+      }
+      if (String(phoneNumber).length == 10) {
+        alert("Спасибо! Мы свяжемся с вами по номеру: 8" + phoneNumber);
+      }
+      
+      else{
+        alert("Пожалуйста, введите корректный номер телефона (10 цифр без пробелов и дефисов).");
+        leaveRequest();
+      }
+      }
+    </script>
+    <script>
+      function OurKontakts(){
+        alert("Наши контакты: 89281455625");
+      }
+    </script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Anton&family=Bebas+Neue&family=Lilita+One&family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <nav>
+    <div class="nav-block">
+       <p><a href="#" class="">The FreshMan Store</a></p>
+       <ol class = "nav-panel">
+        <li class="nav-obj"><a href="#">ГЛАВНАЯ</a></li>
+        <li class="nav-obj"><a href="#">О НАС</a></li>
+        <li class="nav-obj"><a href="#">УСЛУГИ</a></li>
+        <li class="nav-obj"><a href="#" onclick="OurKontakts()">КОНТАКТЫ</a></li>
+       </ol>
+       <p><a href="#">The FreshMan Store</a></p>
+  
+    </div>
+    </nav>
+    <div class="video-container">
+      <video class="video-slide" autoplay muted loop >
+        <source src="video/video-krut-rep.mp4">
+      </video>
+      <div class="overlay">
+        <p>АРТИСТЫ НА ВАШЕ МЕРОПРИЯТИЕ</p>
+      </div>
+      <div class="arrow-down" onclick="scrollDown()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+    </div>
+     <div class="product-card-container">
+      <div class="product-card-line"> 
+        <div class="product-card">
+          <img src="images/card-1.jpg" alt="Product 1">
+          <h3>Toxi$</h3>
+          <p class="text-card">Рэп-исполнитель</p>
+          <p class="cost-card">$10000</p>
+          <button onclick="leaveRequest()">Оставить заявку</button>
+        </div>
+      
+        <div class="product-card">
+          <img src="images/card-2.jpg" alt="Product 2">
+          <h3 style="letter-spacing: normal;">Просто Лера</h3>
+          <p class="text-card">Поп-исполнитель</p>
+          <p class="cost-card">$5000</p>
+          <button onclick="leaveRequest()">Оставить заявку</button>
+        </div>
+      
+        <div class="product-card">
+          <img src="images/card-3.jpg" alt="Product 3">
+          <h3>BUSHIDO ZHO</h3>
+          <p class="text-card">Рэп-исполнитель</p>
+          <p class="cost-card">$20000</p>
+          <button onclick="leaveRequest()">Оставить заявку</button>
+        </div>
+      </div>
+      <div class="product-card-line">
+        <div class="product-card">
+          <img src="images/card-4.jpg" alt="Product 4">
+          <h3>Miyagi</h3>
+          <p class="text-card">Рэп-исполнитель</p>
+          <p class="cost-card">$50000</p>
+          <button onclick="leaveRequest()">Оставить заявку</button>
+        </div>
+      
+        <div class="product-card">
+          <img src="images/card-5.jpeg" alt="Product 5">
+          <h3 style="letter-spacing: normal;">ЕГОР КРИД</h3>
+          <p class="text-card">Поп-реп исполнитель</p>
+          <p class="cost-card">$60000</p>
+          <button onclick="leaveRequest()">Оставить заявку</button>
+        </div>
+      
+        <div class="product-card">
+          <img src="images/card-6.jpg" alt="Product 6">
+          <h3 style="letter-spacing: normal;">Григорий Лепс</h3>
+          <p class="text-card">Певец-эстрады</p>
+          <p class="cost-card">$30000</p>
+          <button onclick="leaveRequest()">Оставить заявку</button>
+        </div>
+      </div>
+      <div class="product-card-line">
+        <div class="product-card">
+          <img src="images/card-7.jpg" alt="Product 7">
+          <h3>MAYOT</h3>
+          <p class="text-card">Рэп-исполнитель</p>
+          <p class="cost-card">$40000</p>
+          <button onclick="leaveRequest()">Оставить заявку</button>
+        </div>
+      
+        <div class="product-card">
+          <img src="images/card-8.jpg" alt="Product 8">
+          <h3>zhanulka</h3>
+          <p class="text-card">Поп-исполнитель</p>
+          <p class="cost-card">$4000</p>
+          <button onclick="leaveRequest()">Оставить заявку</button>
+        </div>
+      
+        <div class="product-card">
+          <img src="images/card-9.jpg" alt="Product 3">
+          <h3>DaBaby</h3>
+          <p class="text-card">Рэп-исполнитель</p>
+          <p class="cost-card">$55000</p>
+          <button onclick="leaveRequest()">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
